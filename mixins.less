@@ -51,3 +51,27 @@
     background-color: rgb(@r, @g, @b);
     background-color: rgba(@r, @g, @b, @a);  /* FF3+, Saf3+, Opera 10.10+, Chrome, IE9  */
 }
+
+
+/*
+*  .box-rotate(7.5deg);
+*/
+.box-rotate(@deg) {
+    -moz-transform: rotate(@deg);  /* FF3.5+ */
+    -o-transform: rotate(@deg);  /* Opera 10.5 */
+    -webkit-transform: rotate(@deg);  /* Saf3.1+, Chrome */ 
+    -ms-transform: rotate(@deg);  /* IE9  */
+    transform: rotate(@deg); 
+}
+
+
+/*
+*  .transition(color);
+*/
+.transition(@property:all, @duration:0.5s, @transition:linear, @delay:0s) {
+    -webkit-transition: @arguments;  /* Saf3.2+, Chrome */
+    -moz-transition: @arguments;  /* FF4+ */
+    -ms-transition: @arguments;  /* IE10? */
+    -o-transition: @arguments;  /* Opera 10.5+ */
+    transition: @arguments;  
+}
