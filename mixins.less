@@ -42,3 +42,12 @@
     background-image:      -o-linear-gradient(top, @start, @stop); /* Opera 11.10+ */
     background-image:         linear-gradient(top, @start, @stop);
 }
+
+
+/*
+*  .rgba(0, 0, 0, 0.2);
+*/
+.rgba(@r, @g, @b, @a:1) {
+    background-color: rgb(@r, @g, @b);
+    background-color: rgba(@r, @g, @b, @a);  /* FF3+, Saf3+, Opera 10.10+, Chrome, IE9  */
+}
