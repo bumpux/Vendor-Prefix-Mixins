@@ -75,3 +75,13 @@
     -o-transition: @arguments;  /* Opera 10.5+ */
     transition: @arguments;  
 }
+
+
+/*
+*  .bgsize(50%, 50%);
+*/
+.background-size(@width:100%, @height:100%) {
+    -webkit-background-size: @arguments; /* Saf3-4 */
+    -moz-background-size: @arguments; /* FF3.6 */
+    background-size: @arguments; /* Opera, IE9, Saf5, Chrome, FF4 */
+}
