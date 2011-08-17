@@ -28,3 +28,17 @@
     -webkit-box-shadow: inset @arguments; /* Saf3.0+, Chrome */
     box-shadow: inset @arguments; /* Opera 10.5, IE9, FF4+, Chrome 10+ */
 }
+
+
+/*
+*  .gradient("#FF0000", "#00FF00");
+*/
+.gradient(@start, @stop) {
+    background-color: @start;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(@start), to(@stop)); /* Saf4+, Chrome */
+    background-image: -webkit-linear-gradient(top, @start, @stop); /* Chrome 10+, Saf5.1+ */
+    background-image:    -moz-linear-gradient(top, @start, @stop); /* FF3.6 */
+    background-image:     -ms-linear-gradient(top, @start, @stop); /* IE10 */
+    background-image:      -o-linear-gradient(top, @start, @stop); /* Opera 11.10+ */
+    background-image:         linear-gradient(top, @start, @stop);
+}
