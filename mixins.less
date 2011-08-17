@@ -18,3 +18,13 @@
     -webkit-box-shadow: @arguments; /* Saf3.0+, Chrome */
     box-shadow: @arguments; /* Opera 10.5, IE9, FF4+, Chrome 10+ */
 }
+
+
+/*
+*  .box-shadow-inset(0px, 0px, 4px, 2px, #ffffff);
+*/
+.box-shadow-inset(@h, @v, @blur:0, @spread:0, @color:#000) {
+    -moz-box-shadow: inset @arguments; /* FF3.5 - 3.6 */
+    -webkit-box-shadow: inset @arguments; /* Saf3.0+, Chrome */
+    box-shadow: inset @arguments; /* Opera 10.5, IE9, FF4+, Chrome 10+ */
+}
