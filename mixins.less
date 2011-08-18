@@ -85,3 +85,13 @@
     -moz-background-size: @arguments; /* FF3.6 */
     background-size: @arguments; /* Opera, IE9, Saf5, Chrome, FF4 */
 }
+
+
+/*
+*  .columns(2, 15px);
+*/
+.columns(@count, @gap) {
+    -webkit-column-count: @count;  -webkit-column-gap: @gap; /* Saf3, Chrome */
+    -moz-column-count: @count;     -moz-column-gap: @gap; /* FF3.5+  */
+    column-count: @count;          column-gap: @gap; /* Opera 11+ */
+}
