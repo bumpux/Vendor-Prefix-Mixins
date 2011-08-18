@@ -115,6 +115,18 @@
 
 
 /*
+*  .scale(1.2);
+*/
+.scale(@amount) {
+    -moz-transform: scale(@amount);
+    -webkit-transform: scale(@amount);
+    -o-transform: scale(@amount);
+    -ms-transform: scale(@amount);
+    transform: scale(@amount);
+}
+
+
+/*
 *  .transition(color);
 */
 .transition(@property:all, @duration:0.5s, @transition:linear, @delay:0s) {
