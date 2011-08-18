@@ -127,6 +127,30 @@
 
 
 /*
+*  .translate(1px, 2px);
+*/
+.translate(@x:0, @y:0) {
+    -moz-transform: translate(@x, @y);
+    -webkit-transform: translate(@x, @y);
+    -o-transform: translate(@x, @y);
+    -ms-transform: translate(@x, @y);
+    transform: translate(@x, @y);
+}
+
+
+/*
+*  .skew(6px, 3px);
+*/
+.skew(@x:0, @y:0) {
+    -moz-transform: skew(@x, @y);
+    -webkit-transform: skew(@x, @y);
+    -o-transform: skew(@x, @y);
+    -ms-transform: skew(@x, @y);
+    transform: skew(@x, @y);
+}
+
+
+/*
 *  .transition(color);
 */
 .transition(@property:all, @duration:0.5s, @transition:linear, @delay:0s) {
