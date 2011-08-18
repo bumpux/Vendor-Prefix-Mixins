@@ -9,6 +9,55 @@
     -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box; 
 }
 
+/*
+*  .border-top-left-radius(5px);
+*/
+.border-top-left-radius(@radius) {
+    -webkit-border-top-left-radius: @radius;
+    -moz-border-radius-topleft: @radius;
+    border-top-left-radius: @radius;
+}
+
+/*
+*  .border-top-right-radius(5px);
+*/
+.border-top-right-radius(@radius) {
+    -webkit-border-top-right-radius: @radius;
+    -moz-border-radius-topright: @radius;
+    border-top-right-radius: @radius;
+}
+
+/*
+*  .border-bottom-left-radius(5px);
+*/
+.border-bottom-left-radius(@radius) {
+    -webkit-border-bottom-left-radius: @radius;
+    -moz-border-radius-bottomleft: @radius;
+    border-bottom-left-radius: @radius;
+}
+
+/*
+*  .border-bottom-right-radius(5px);
+*/
+.border-bottom-right-radius(@radius) {
+    -webkit-border-bottom-right-radius: @radius;
+    -moz-border-radius-bottomright: @radius;
+    border-bottom-right-radius: @radius;
+}
+
+/*
+*  Set each corner individually
+*  Order: Top Left, Top Right, Bottom Right, Bottom Left.
+*
+*  .border-radius-corners(1px, 2px, 2px, 1px);
+*/
+.border-radius-corners(@tl, @tr, @br, @bl) {
+    .border-top-left-radius(@tl);
+    .border-top-right-radius(@tr);
+    .border-bottom-right-radius(@br);
+    .border-bottom-left-radius(@bl);
+}
+
 
 /*
 *  .box-shadow(0px, 0px, 4px, 2px, #ffffff);
