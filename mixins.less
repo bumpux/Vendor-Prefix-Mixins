@@ -173,6 +173,16 @@
 
 
 /*
+* .box-sizing(border-box);
+*/
+.box-sizing(@option) {
+    -moz-box-sizing: @option;
+    -webkit-box-sizing: @option;
+    box-sizing: @option;
+}
+
+
+/*
 *  .columns(2, 15px);
 */
 .columns(@count, @gap) {
